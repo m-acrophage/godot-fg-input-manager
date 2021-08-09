@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://inputmanager.gd" type="Script" id=1]
+[ext_resource path="res://AttackLabel.gd" type="Script" id=2]
+
+[node name="Node" type="Node"]
+script = ExtResource( 1 )
+
+[node name="BufferLabel" type="Label" parent="."]
+margin_left = 256.238
+margin_top = 195.819
+margin_right = 856.238
+margin_bottom = 272.819
+text = "sdfsdfsdfsdfsdf"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AttackLabel" type="Label" parent="."]
+margin_left = 349.0
+margin_top = 297.0
+margin_right = 754.0
+margin_bottom = 330.0
+text = "asdaqfrrtfhdtrhder"
+align = 1
+valign = 1
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Controls" type="Label" parent="."]
+margin_left = 1.0
+margin_top = 2.0
+margin_right = 229.0
+margin_bottom = 598.0
+text = "Up - Space
+Down - S
+Left - A
+Right - D
+Attack - U
+
+Supported Commands:
+Quarter Circle Back/Forward
+DP/Reverse DP
+Charge Motions (Back and Down)
+Half Circle Back/Forward
+Down Down
+Dash Forward/Back
+
+Pad should work, X/A is attack
+
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
