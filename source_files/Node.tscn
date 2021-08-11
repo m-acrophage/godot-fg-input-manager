@@ -33,10 +33,21 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="DirectionLabel" type="Label" parent="."]
+margin_left = 738.819
+margin_top = 281.96
+margin_right = 836.819
+margin_bottom = 386.96
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Controls" type="Label" parent="."]
 margin_left = 1.0
 margin_top = 2.0
-margin_right = 229.0
+margin_right = 259.0
 margin_bottom = 598.0
 text = "Up - Space
 Down - S
@@ -50,13 +61,14 @@ DP/Reverse DP
 Charge Motions (Back and Down)
 Half Circle Back/Forward
 Down Down
-Dash Forward/Back
+Dash Forward/Back (Doesn't require attack)
 
-Pad should work, X/A is attack
+Pad/ stick should work, X/A is attack
 
 "
 align = 1
 valign = 1
+autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -65,25 +77,37 @@ __meta__ = {
 script = ExtResource( 4 )
 
 [node name="Up" type="Sprite" parent="Arrows"]
-position = Vector2( 555.625, 44.0972 )
+position = Vector2( 560, 50 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 3 )
+
+[node name="UpRight" type="Sprite" parent="Arrows"]
+position = Vector2( 655.159, 95.7539 )
+rotation = 0.785398
+scale = Vector2( 2, 2 )
+texture = ExtResource( 3 )
+
+[node name="Right" type="Sprite" parent="Arrows"]
+position = Vector2( 710.595, 188.657 )
+rotation = 1.5708
 scale = Vector2( 2, 2 )
 texture = ExtResource( 3 )
 
 [node name="DownRight" type="Sprite" parent="Arrows"]
 position = Vector2( 663.978, 283.482 )
-rotation = 2.39983
+rotation = 2.35619
 scale = Vector2( 2, 2 )
 texture = ExtResource( 3 )
 
 [node name="Down" type="Sprite" parent="Arrows"]
-position = Vector2( 558.145, 318.76 )
+position = Vector2( 560, 320 )
 rotation = 3.14159
 scale = Vector2( 2, 2 )
 texture = ExtResource( 3 )
 
 [node name="DownLeft" type="Sprite" parent="Arrows"]
 position = Vector2( 464.911, 274.663 )
-rotation = -2.39983
+rotation = -2.35619
 scale = Vector2( 2, 2 )
 texture = ExtResource( 3 )
 
@@ -93,20 +117,8 @@ rotation = -1.5708
 scale = Vector2( 2, 2 )
 texture = ExtResource( 3 )
 
-[node name="Right" type="Sprite" parent="Arrows"]
-position = Vector2( 716.895, 182.688 )
-rotation = 1.5708
-scale = Vector2( 2, 2 )
-texture = ExtResource( 3 )
-
-[node name="UpRight" type="Sprite" parent="Arrows"]
-position = Vector2( 655.159, 95.7539 )
-rotation = 0.846485
-scale = Vector2( 2, 2 )
-texture = ExtResource( 3 )
-
 [node name="UpLeft" type="Sprite" parent="Arrows"]
 position = Vector2( 458.611, 93.2341 )
-rotation = -0.846485
+rotation = -0.785398
 scale = Vector2( 2, 2 )
 texture = ExtResource( 3 )

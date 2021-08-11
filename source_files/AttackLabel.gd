@@ -6,32 +6,32 @@ var state = "start"
 var cooldown = 0
 const set_cooldown = 10
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	match state:
 		"start":
 			text = "Show me your moves"
 		"fdash":
-			text = "You must be a gio main"
+			text = "Forward Dash"
 		"bdash":
-			text = "Negative penalty"
+			text = "Back Dash"
 		"bcharge":
-			text = "Every Axl at full screen"
+			text = "Charge Back to Forward"
 		"dcharge":
-			text = "Flying dolphin"
+			text = "Charge Down to Up"
 		"qcf":
-			text = "This butterfly was better in +r, I swear"
+			text = "Quarter Circle Forward"
 		"qcb":
-			text = "Coward's Megafist"
+			text = "Quarter Circle Back"
 		"dp":
-			text = "Clean hit Volcanic Viper"
+			text = "DP/Shoryuken"
 		"rdp":
-			text = "No reverse dp's? This game is for scrubs"
+			text = "Backwards DP"
 		"dd":
-			text = "Drill go brrrr"
+			text = "Double Down"
 		"hcf":
-			text = "Counterhit Fafnir"
+			text = "Half Circle Forward"
 		"hcb":
-			text = "Chipp's stupid command grab"
+			text = "Half Circle Back"
 	
 	if cooldown > 0:
 		cooldown -= 1
