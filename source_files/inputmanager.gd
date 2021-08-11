@@ -97,7 +97,7 @@ func _physics_process(_delta):
 	get_bdash()
 	set_history()
 	
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("swap"):
 		xscale = -xscale
 	
 	var direction_text
@@ -106,7 +106,7 @@ func _physics_process(_delta):
 	else:
 		direction_text = "LEFT"
 	
-	direction_label.text = ("Press SPACE to change direction facing. \n \n Current direction: " + direction_text)
+	direction_label.text = ("Press Enter/Square(PS)/X(XB) to change direction facing. \n \n Current direction: " + direction_text)
 	
 	# here for demo, can be removed
 	buffer_label.text = str(command_buffer)

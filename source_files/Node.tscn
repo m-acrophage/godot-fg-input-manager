@@ -34,10 +34,10 @@ __meta__ = {
 }
 
 [node name="DirectionLabel" type="Label" parent="."]
-margin_left = 738.819
-margin_top = 281.96
-margin_right = 836.819
-margin_bottom = 386.96
+margin_left = 28.2238
+margin_top = 462.129
+margin_right = 126.224
+margin_bottom = 567.129
 align = 1
 valign = 1
 __meta__ = {
@@ -63,7 +63,7 @@ Half Circle Back/Forward
 Down Down
 Dash Forward/Back (Doesn't require attack)
 
-Pad/ stick should work, X/A is attack
+Pad/ stick should work, X(PS)/A(XB) is attack
 
 "
 align = 1
